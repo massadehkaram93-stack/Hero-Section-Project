@@ -36,6 +36,7 @@ body {
     top : 25px ;
     z-index: 101;
     padding : 6px 12px ;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .hero-section .head .hamburger-menu-btn .first.open {
@@ -58,6 +59,7 @@ body {
     background-color: black ;
     border : 2px solid white ;
     z-index: 100 ;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .hero-section .head .hamburger-menu.none {
@@ -92,6 +94,7 @@ body {
 .hero-section .head .hamburger-menu .navbarr li {
     margin-top : 20px ;
     margin-left : 20px; 
+    -webkit-tap-highlight-color: transparent;
 }
 
 .hero-section .head .hamburger-menu .start-boxx {
@@ -103,6 +106,7 @@ body {
 .hero-section .head .hamburger-menu .start-boxx li {
     padding : 8px 20px ;
     margin-left : 20px ;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .hero-section .head .navbar {
@@ -114,6 +118,7 @@ body {
 
 .hero-section .head .navbar li {
     margin : 30px ;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .hero-section .head .start-box {
@@ -127,6 +132,7 @@ body {
 .hero-section .head .start-box li {
     margin : 10px ;
     padding : 8px 20px ;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* head ^-^ */
@@ -171,6 +177,7 @@ body {
     height : fit-content ;
     padding : 12px 30px ;
     margin : 10px ;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .hero-section .left .users-text {
