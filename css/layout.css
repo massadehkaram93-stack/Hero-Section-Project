@@ -10,6 +10,7 @@ body {
     grid-template-columns: 1fr auto;
     grid-template-rows: auto 1fr;
     grid-template-areas: "head head" "left1 right1";
+    overflow-x: hidden ;
 }
 
 .hero-section .head {
@@ -69,7 +70,7 @@ body {
     right :-2px ;
     top: 70px ;
     width : 71% ;
-    height : 75dvh ;
+    height : 80dvh ;
     z-index: 100 ;
 }
 
@@ -224,7 +225,7 @@ body {
     }
 
     .hero-section .head .hamburger-menu {
-        padding : 8px 20px ;
+        padding : 12px 20px ;
     }
 
     .hero-section .right img {
