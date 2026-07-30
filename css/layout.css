@@ -205,7 +205,9 @@ body {
         grid-template-columns: 1fr ;
         grid-template-rows: auto 1fr;
         grid-template-areas: "head" "left1";
-    }
+        overflow-x: hidden;
+    }       
+
 
     .hero-section .head {
         display: grid;
@@ -275,7 +277,6 @@ body {
         grid-template-columns: 1fr ;
         grid-template-rows: auto 1fr;
         grid-template-areas: "head" "left1";
-        overflow-y: hidden;
         overflow-x: hidden;
     }
 
