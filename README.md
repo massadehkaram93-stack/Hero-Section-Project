@@ -16,7 +16,7 @@ During this project I improved my skills in:
 - UI / UX Thinking
 
 # 📂 Project Structure
-ذذذ
+```text
 Pixelflux.ai 
 │
 ├── css
@@ -24,7 +24,7 @@ Pixelflux.ai
 ├── images
 ├── index.html
 └── README.md
-ذذذؤ
+```
 # 🌍 Language
 
 The current version of the project is available in **English**.
