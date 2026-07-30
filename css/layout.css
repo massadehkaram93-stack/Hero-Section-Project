@@ -37,6 +37,7 @@ body {
     z-index: 101;
     padding : 6px 12px ;
     -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
 }
 
 .hero-section .head .hamburger-menu-btn .first.open {
@@ -60,6 +61,7 @@ body {
     border : 2px solid white ;
     z-index: 100 ;
     -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
 }
 
 .hero-section .head .hamburger-menu.none {
@@ -71,7 +73,7 @@ body {
     transform: translateX(1000px); 
     right :-2px ;
     top: 70px ;
-    width : 80% ;
+    width : 85% ;
     height : 80dvh ;
     z-index: 100 ;
 }
@@ -95,6 +97,7 @@ body {
     margin-top : 20px ;
     margin-left : 20px; 
     -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
 }
 
 .hero-section .head .hamburger-menu .start-boxx {
@@ -107,7 +110,9 @@ body {
     padding : 8px 20px ;
     margin-left : 20px ;
     -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
 }
+
 
 .hero-section .head .navbar {
     display : flex ;
@@ -119,6 +124,7 @@ body {
 .hero-section .head .navbar li {
     margin : 30px ;
     -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
 }
 
 .hero-section .head .start-box {
@@ -133,6 +139,7 @@ body {
     margin : 10px ;
     padding : 8px 20px ;
     -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
 }
 
 /* head ^-^ */
@@ -178,6 +185,7 @@ body {
     padding : 12px 30px ;
     margin : 10px ;
     -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
 }
 
 .hero-section .left .users-text {
