@@ -83,3 +83,12 @@ window.addEventListener("click" , (e) => {
         }
     }
 });
+
+window.addEventListener('touchstart', (e) => {
+    for (let className of e.target.classList) {
+        if (clicks[className]) {
+            clicks[className](e.target);
+            break;
+        }
+    }
+});
