@@ -1,430 +1,554 @@
-body {
+.pricing-section {
     width : 100% ;
     height : 100dvh ;
-}
-
-.hero-section {
-    width : 100% ;
-    height : 100dvh ;
-    display : grid ;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: "head head" "left1 right1";
     overflow-x: hidden ;
+    overflow-y: hidden ;
 }
 
-.hero-section .head {
-    display: grid ;
-    grid-area: head ;
+.pricing-section .logo {
+    margin : 30px ;
+    z-index: 10;
+} 
+
+.pricing-section .logo span {
+    font-size: 35px ;
 }
 
-.hero-section .head .logo {
-    position: absolute ;
-    top : 20px ; 
-    left : 20px;
-}
-
-.hero-section .head .logo .name {
-    display: inline ;
-    margin : 5px 0px ;
-}
-
-.hero-section .head .hamburger-menu-btn {
+.pricing-section .containar.none {
     display : none ;
-    position: absolute ;
-    right : 30px ;
-    top : 25px ;
-    z-index: 101;
-    padding : 6px 12px ;
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
 }
 
-.hero-section .head .hamburger-menu-btn .first.open {
-    transform: rotate(45deg) translate(6px , 6px) ;
-}
-
-.hero-section .head .hamburger-menu-btn .midle.open {
-    opacity: 0 ;
-}
-
-.hero-section .head .hamburger-menu-btn .last.open {
-    transform: rotate(-45deg) translate(6px , -7px) ;
-}
-
-.hero-section .head .hamburger-menu-btn div {
-    transform-origin: center;
-    transition: all 0.5s ease;
-    height : 5px ;
-    width : 35px ;
-    background-color: black ;
-    border : 2px solid white ;
-    z-index: 100 ;
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
-}
-
-.hero-section .head .hamburger-menu.none {
-    display: none;
-}
-
-.hero-section .head .hamburger-menu {
-    position: absolute ;
-    transform: translateX(1000px); 
-    right :-2px ;
-    top: 70px ;
-    width : 85% ;
-    height : 80dvh ;
-    z-index: 100 ;
-}
-
-.hero-section .head .hamburger-menu.open {
-    transform: translateX(0px); 
-}
-
-.hero-section .head .hamburger-menu p {
-    margin-left : 20px ;
-    margin-top : 100px ;
-}
-
-.hero-section .head .hamburger-menu .navbarr {
-    position: relative;
-    display : block ;
-    margin-top: 50px ;
-}
-
-.hero-section .head .hamburger-menu .navbarr li {
-    margin-top : 20px ;
-    margin-left : 20px; 
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
-}
-
-.hero-section .head .hamburger-menu .start-boxx {
-    display: flex ;
-    margin-top : 70px ;
-    margin-left : 20px; 
-}
-
-.hero-section .head .hamburger-menu .start-boxx li {
-    padding : 8px 20px ;
-    margin-left : 20px ;
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
-}
-
-
-.hero-section .head .navbar {
+.pricing-section .navbar {
     display : flex ;
     position: absolute ;
-    top : 0; 
+    top : 30px ;
     right : 400px ;
 }
 
-.hero-section .head .navbar li {
-    margin : 30px ;
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
-}
-
-.hero-section .head .start-box {
-    display : flex ;
-    position: absolute ;
-    top : 0 ;
-    right : 60px;
-    margin-top : 10px ;
-}
-
-.hero-section .head .start-box li {
+.pricing-section .navbar li {
     margin : 10px ;
-    padding : 8px 20px ;
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
-}
-
-/* head ^-^ */
-
-.hero-section .right {
-    display : grid ;
-    grid-area : right1 ;
-    direction: rtl ;
-}
-
-.hero-section .right img {
-    position: absolute ;
-    bottom : 0 ;
-}
-
-/* right ^-^ */
-
-.hero-section .left {
-    display : grid ;
-    grid-area : left1 ;
-}
-
-.hero-section .left .hero-heading {
-    display : flex ;
-    margin-left : 200px ;
-    margin-top : 100px ;
-}
-
-.hero-section .left .hero-paragraph {
-    width : 600px ;
-    margin-left : 200px ;
-    margin-top : -40px ;
-}
-
-.hero-section .left .box-btn {
-    display : flex ;
-    margin-left : 350px ;
-    margin-top : -60px ;
-}
-
-.hero-section .left .box-btn li {
-    height : fit-content ;
     padding : 12px 30px ;
-    margin : 10px ;
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
 }
 
-.hero-section .left .users-text {
+.pricing-section .start-box {
     display : flex ;
-    margin-bottom : -40px ;
+    width : max-content ;
+    position: absolute ;
+    top : 20px ;
+    right : 50px ;
+}
+
+.pricing-section .start-box button {
+    padding : 12px 30px ;
+    margin : 15px ;
+}
+
+.pricing-section .humbarger-menu-btn {
+    display : none;
+    width : fit-content ;
+    position: absolute ;
+    right : 10px ;
+    top : 30px ;
+    padding : 6px 15px ;
+    z-index: 100;
+}
+
+.pricing-section .humbarger-menu-btn div {
+    transition: all 0.3s ;
+    transform-origin: center ;
+    width : 45px ;
+    height : 7px ;
+    margin-top: 3px ;
+    z-index: 100 ;
+}
+
+.pricing-section .humbarger-menu-btn div.first.open {
+    transform: rotate(45deg) translateY(14px);
+}
+
+.pricing-section .humbarger-menu-btn div.middle.open {
+    opacity: 0 ;
+}
+
+.pricing-section .humbarger-menu-btn div.last.open {
+    transform: rotate(-45deg) translateY(-14px);
+}
+
+.pricing-section .humbarger-menu.open {
+    transform: translateX(0px);
+    z-index: 1000 !important ;
+    display: unset !important ; 
+}
+
+.pricing-section .humbarger-menu.none {
+    display: none ;
+}
+
+.pricing-section .humbarger-menu {
+    display : none ;
+    position: absolute;
+    transition: 1s;
+    transform: translateX(1000px);
+    top : 100px ;
+    right : -5px ;
+    width : 75% ;
+    height : 75dvh ; 
+    padding : 12px 30px ;
+    z-index: 100;
+}
+
+.pricing-section .humbarger-menu .navbar {
+    display : block ;
+    width : max-content ;
+    top : 60px ;
+    left : 0 ;
+    margin-top : 40px ;
+    z-index: 100;
+}
+
+.pricing-section .humbarger-menu .navbar li {
+    display : block ;
+    z-index: 100;
+}
+
+.pricing-section .humbarger-menu .start-box {
+    display : flex ;
+    transform: scale(0.85);
+    width :max-content ;
     height : fit-content ;
+    margin-top : 375px ;
+    margin-right : -55px ;
+    z-index: 100;
 }
 
-.hero-section .left .users-text .users {
-    display: flex ;
+.pricing-section .humbarger-menu span {
+    font-size: 25px ;
+    z-index: 100;
 }
 
-.hero-section .left .users-text .users li {
-    width : 30px ;
-    height : 30px ;
-    margin-left : -10px ;
-}
-
-/* left ^-^ */
-
-.hero-section .ui-overlay {
+.pricing-section .ui-overlay {
+    position: absolute ;
+    top : 0; 
     width : 100% ;
     height : 100vh ;
     z-index: 99 ;
 } 
 
-
-/* ui Overlay ^-^ */
-
-@media (max-width : 575px) {
-    .hero-section {
-        grid-template-columns: 1fr ;
-        grid-template-rows: auto 1fr;
-        grid-template-areas: "head" "left1";
-        overflow-x: hidden;
-    }       
-
-
-    .hero-section .head {
-        display: grid;
-        grid-area : head ;
-    }
-
-    .hero-section .head .navbar {
-        display: none ;
-    }
-
-    .hero-section .head .start-box {
-        display : none ;
-    }
-
-    .hero-section .head .hamburger-menu-btn {
-        display: unset ;
-    }
-
-    .hero-section .head .hamburger-menu {
-        padding : 12px 20px ;
-    }
-
-    .hero-section .right img {
-        display : none ;
-    }
-
-    .hero-section .left {
-        display : grid ;
-        grid-area : left1 ;
-    }
-
-    .hero-section .left .hero-heading {
-        position: absolute ;
-        width : max-content ;
-        top : 150px ;
-        left : 70px ;
-        margin : 0px ;
-        font-size: 25px ;
-    }
-
-    .hero-section .left .hero-paragraph {
-        position: absolute ;
-        top : 260px ;
-        left : 70px ;
-        width : 270px ;
-        margin : 0px ;
-        font-size: medium ;
-    }
-
-    .hero-section .left .box-btn {
-        position: absolute ;
-        top : 400px ;
-        left : 10px ;
-        transform: scale(0.85);
-        margin : 0px ;
-    }
-
-    .hero-section .left .users-text {
-        position: absolute ;
-        top : 550px ;
-        left : 0px ;
-    }
+.pricing-section .section-tag {
+    padding : 6px 15px ;
+    margin-top : 30px ;
+    margin-left : 620px ;
+    width : max-content ;
+    font-weight: bold;
 }
 
-@media (min-width : 576px) and (max-width : 767px) {
-    .hero-section {
-        grid-template-columns: 1fr ;
-        grid-template-rows: auto 1fr;
-        grid-template-areas: "head" "left1";
+.pricing-section .main-heading {
+    font-size: 45px ;
+    margin-top : 20px ;
+    margin-left : 450px ;
+}
+
+.pricing-section .main-paragraph {
+    font-size: 20px ;
+    width : 600px ;
+    margin-left : 400px ;
+    margin-top : 30px ;
+    line-height: 1.4;
+}
+
+.pricing-section .planing-box {
+    width : max-content ;
+    padding : 12px 30px ;
+    margin-left : 570px ;
+    margin-top : 10px ;
+} 
+
+.pricing-section .planing-box button {
+    padding : 6px 15px ;
+}
+
+
+.pricing-section .card-box {
+    display : flex ;
+    justify-content: center ;
+    align-items: end ;
+    gap : 5% ;
+    width : 100% ;
+    height : 45dvh ;
+}
+
+.pricing-section .card-box .card {
+    width : 20% ; 
+    height : 95% ;
+    margin-bottom : 10px ;
+}
+
+.pricing-section .card-box .card .name {
+    display : flex ;
+    justify-content: center ;
+    align-self: start ;
+    margin-top : 10px ;
+    font-size : 20px 
+}
+
+.pricing-section .card-box .card .description {
+    display : flex ;
+    justify-content: center ;
+    align-self: start ;
+    margin-top : 10px ;
+    font-size: 14px ;
+}
+
+.pricing-section .card-box .card .price {
+    display : flex ;
+    justify-content: center ;
+    align-self: start ;
+    margin-top : 10px ;
+    align-items: flex-end; 
+    justify-content: center; 
+    font-size : 20px ;
+    gap: 2px;
+} 
+
+.pricing-section .card-box .card .price span {
+    font-size : 35px ;
+    font-weight: bold ;
+}
+
+.pricing-section .card-box .card button {
+    display : flex ;
+    justify-self: center ;
+    padding : 6px 15px ;
+    margin-top : 10px ;
+}
+
+.pricing-section .card-box .card .Features {
+    margin-top : 10px ;
+    line-height: 1.4;
+}
+
+.pricing-section .card-box .card .Features li {
+    display : flex ;
+    margin-left : 30px ;
+    font-size:14px ;
+    margin-top : 2px ;
+}
+
+.pricing-section .background {
+    display: none ;
+    position: fixed ;
+    width : 100% ;
+    height : 10dvh ;
+    padding : 14px 35px ;
+    top : 0; 
+    right : 0;
+    left : 0 ;
+    z-index: 1;
+}
+
+@media (max-width : 575px) {
+    body {
+        width : max-content ;
         overflow-x: hidden;
     }
 
-    .hero-section .head {
-        display: grid;
-        grid-area : head ;
-    }
-
-    .hero-section .head .navbar {
-        display: none ;
-    }
-
-    .hero-section .head .start-box {
-        display : none ;
-    }
-
-    .hero-section .head .hamburger-menu-btn {
-        display: unset ;
-    } 
-    
-    .hero-section .head .hamburger-menu {
-        padding : 8px 20px ;
-    }
-
-    .hero-section .right img {
-        display : none ;
-    }
-
-    .hero-section .left {
-        display : grid ;
-        grid-area : left1 ;
-    }
-
-    .hero-section .left .hero-heading {
-        position: absolute ;
+    .pricing-section {
+        overflow-x: hidden;
+        overflow-y: auto ;
         width : max-content ;
-        top : 150px ;
-        left : 70px ;
-        margin : 0px ;
-        font-size: 25px ;
+        height: max-content ;
+        padding : 12px 0px ;
     }
 
-    .hero-section .left .hero-paragraph {
-        position: absolute ;
-        top : 260px ;
-        left : 70px ;
-        width : 270px ;
-        margin : 0px ;
-        font-size: medium ;
-    }
-
-    .hero-section .left .box-btn {
-        position: absolute ;
-        top : 400px ;
-        left : 10px ;
-        transform: scale(0.85);
+    .pricing-section .logo {
+        position: fixed ;
+        top : 20px ;
+        left : 20px ;
         margin : 0px ;
     }
 
-    .hero-section .left .users-text {
-        position: absolute ;
-        top : 550px ;
-        left : 0px ;
+    .pricing-section .navbar {
+        display: none;
     }
+
+    .pricing-section .start-box {
+        display : none ;
+    }
+
+    .pricing-section .humbarger-menu-btn {
+        display : unset ;
+        position: absolute ;
+        top : 20px ;
+        right : 20px ;
+    }
+
+    .pricing-section .humbarger-menu {
+        display : unset ;
+        padding : 12px 30px ;
+    }
+
+    .pricing-section .section-tag {
+        margin : 0px ;
+        margin-top : 100px;
+        margin-left : 150px ;
+        transform: scale(0.90);
+    }
+    
+    .pricing-section .main-heading {
+        width : max-content ;
+        font-size: 30px ;
+        margin-top : 40px ;
+        margin-left : 40px;
+    }
+    
+    .pricing-section .main-paragraph {
+        margin-left : 40px ;
+        width : 320px ;
+    }
+
+    .pricing-section .planing-box {
+        margin : 0px; 
+        margin-top :  30px ;
+        margin-left : 50px ;
+        margin-bottom: 20px ;
+    }
+    
+    .pricing-section .card-box {
+        display: block ;
+        overflow: hidden ;
+        height : max-content ;
+        width : 100% ;
+        margin-left : 20px; 
+        padding : 12px 30px ;
+    }
+
+    .pricing-section .card-box .card {
+        width : 95% ;
+        padding : 6px 15px ;
+    }
+
+    .pricing-section .background {
+        display: unset;
+        width : 100% ;
+    }
+
+}
+
+@media (min-width : 576px) and (max-width : 767px){
+    body {
+        width : max-content ;
+        overflow-x: hidden;
+    }
+
+    .pricing-section {
+        overflow-x: hidden;
+        overflow-y: auto ;
+        width : max-content ;
+        height: max-content ;
+        padding : 12px 0px ;
+    }
+
+    .pricing-section .logo {
+        position: fixed ;
+        top : 20px ;
+        left : 20px ;
+        margin : 0px ;
+    }
+
+    .pricing-section .navbar {
+        display: none;
+    }
+
+    .pricing-section .start-box {
+        display : none ;
+    }
+
+    .pricing-section .humbarger-menu-btn {
+        display : unset ;
+        position: absolute ;
+        top : 20px ;
+        right : 20px ;
+    }
+
+    .pricing-section .humbarger-menu {
+        display : unset ;
+        padding : 12px 30px ;
+    }
+
+    .pricing-section .section-tag {
+        margin : 0px ;
+        margin-top : 100px;
+        margin-left : 150px ;
+        transform: scale(0.90);
+    }
+    
+    .pricing-section .main-heading {
+        width : max-content ;
+        font-size: 30px ;
+        margin-top : 40px ;
+        margin-left : 40px;
+    }
+    
+    .pricing-section .main-paragraph {
+        margin-left : 40px ;
+        width : 320px ;
+    }
+
+    .pricing-section .planing-box {
+        margin : 0px; 
+        margin-top :  30px ;
+        margin-left : 50px ;
+        margin-bottom: 20px ;
+    }
+    
+    .pricing-section .card-box {
+        display: block ;
+        overflow: hidden ;
+        height : max-content ;
+        width : 100% ;
+        margin-left : 20px; 
+        padding : 12px 30px ;
+    }
+
+    .pricing-section .card-box .card {
+        width : 95% ;
+        padding : 6px 15px ;
+    }
+
+    .pricing-section .background {
+        display: unset;
+        width : 100% ;
+    }
+
 }
 
 @media (min-width : 767px) and (max-width : 991px) {
-    .hero-section {
-        grid-template-columns: 1fr ;
-        grid-template-rows: auto 1fr;
-        grid-template-areas: "head" "left1";
+    body {
+
+        overflow-x: hidden;
+    }
+
+    .pricing-section {
+        overflow-x: hidden;
+        overflow-y: auto ;
         width : 100% ;
-        height : 100dvh;
+        height: max-content ;
+        padding : 12px 0px ;
+        width : 100% ;
+        height : 100vh ;
     }
 
-    .hero-section .head {
-        display: grid;
-        grid-area : head ;
+    .pricing-section .navbar {
+        display: none;
     }
 
-    .hero-section .head .navbar {
-        display: none ;
-    }
-
-    .hero-section .head .start-box {
+    .pricing-section .start-box {
         display : none ;
     }
 
-    .hero-section .head .hamburger-menu-btn {
-        display: unset ;
-        position: absolute;
-        right : 40px ;
-        top : 30px ;
-    }
-
-    .hero-section .head .hamburger-menu {
-        padding : 8px 20px ;
-    }
-
-    .hero-section .right img {
-        display : none ;
-    }
-
-    .hero-section .left {
-        display : grid ;
-        grid-area : left1 ;
-    }
-
-    .hero-section .left .hero-heading {
+    .pricing-section .humbarger-menu-btn {
+        display : unset ;
         position: absolute ;
+        top : 20px ;
+        right : 20px ;
+    }
+
+    .pricing-section .humbarger-menu {
+        display : unset ;
+    }
+
+    .pricing-section .humbarger-menu .navbar li {
+        margin-top : 30px ;
+        font-size: 25px ;
+    }
+
+    .pricing-section .humbarger-menu .start-box {
         width : max-content ;
-        top : 300px ;
-        left : 100px ;
+        position: relative;
+        display: flex ;
+        justify-self: center ;
         margin : 0px ;
+        margin-top : 500px ;
+        margin-left : 100px ;
     }
 
-    .hero-section .left .hero-paragraph {
-        position: absolute ;
-        top : 450px ;
-        left : 100px ;
-        margin : 0px ;
+    .pricing-section .humbarger-menu .start-box button {
+        transform: scale(1.19);
     }
 
-    .hero-section .left .box-btn {
-        position: absolute ;
-        top : 600px ;
-        left : 200px ;
+    .pricing-section .section-tag {
         margin : 0px ;
+        margin-top : 100px;
+        display : flex;
+        justify-self: center ;
+        transform: scale(0.90);
+    }
+    
+    .pricing-section .main-heading {
+        display : flex ;
+        justify-self: center ;
+        width : max-content ;
+        margin : 0px; 
+        margin-top : 30px;
+    }
+    
+    .pricing-section .main-paragraph {
+        display : flex ;
+        justify-self: center ;
+        width : max-content ;
+        margin : 0px; 
+        margin-top : 30px ;
+        width : 400px ;
     }
 
-    .hero-section .left .users-text {
-        position: absolute ;
-        top : 800px ;
-        left : 0px ;
+    .pricing-section .planing-box {
+        display : flex ;
+        justify-self: center ;
+        margin : 0px; 
+        margin-top : 40px ;
+        margin-bottom: 20px ;
     }
-}
+
+    .pricing-section .card-box {
+        position: absolute ;
+        bottom : 0;
+    }
+
+    .pricing-section .card-box .card {
+        width : 95% ;
+    }
+
+    .pricing-section .card-box .card .name {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .pricing-section .card-box .card .description {
+        font-size: 16px;
+        margin-top : 15px;
+    }
+
+    .pricing-section .card-box .card .price {
+        margin-top : 20px ;
+        font-size : 30px ;
+    }
+
+    .pricing-section .card-box .card .price span {
+        font-size: 40px ;
+    }
+
+    .pricing-section .card-box .card button {
+        transform: scale(1.2);
+    }
+
+    .pricing-section .card-box .card .Features {
+        margin-top : 40px ;
+    }
+
+    .pricing-section .card-box .card .Features li {
+        font-size: 15px ;
+        font-weight: bold ;
+        margin-top : 10px ;
+    }
+
+    }
