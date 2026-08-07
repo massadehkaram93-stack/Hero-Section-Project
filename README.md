@@ -1,5 +1,15 @@
 # Pixelflux.ai 
-it is a fake web i do it just for traning 
+it is a Hero section project for an fake Ai Company 
+
+
+# 🎮 Live Demo
+
+https://massadehkaram93-stack.github.io/Hero-Section-Project/
+
+---
+
+# 📸 Screenshot 
+<img width="960" height="540" alt="755392498_1039435862067708_7239300493259834134_n" src="https://github.com/user-attachments/assets/1529ba95-2a62-4d60-b58c-0ea5ebf495a2" />
 
 # 🛠 Technologies 
 
